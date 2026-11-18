@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>My Budget Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-brading">
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+PHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjNENBRjUwIi8+PHRleHQgeD0iNDAiIHk9IjUwIiBmb250LXNpemU9IjQwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSJ3aGl0ZSI+JDwvdGV4dD48L3N2Zz4=" alt="Budget Tracker Logo" width="80" height="80">
+    <div class="header-text-group">
+        <h1>My Budget Tracker</h1>
+        <p>Track your income and expenses in one place</p>
+    </div>
+    </div>
+    </header>
+    <details> 
+        <summary>How to use this tracker</summary>
+        <div class="details-content"></div>
+        <p>Enter your expense name, amount, select a category, choose a date,and click Add Expense to add it to the table.</p>
+    </details>
+    <br>
+
+    <h2>Financial Tips</h2>
+    <iframe width="400" height="225" src="https://www.youtube.com/embed/r9oWa9p10qg" title="Financial Tips Video" frameborder="0" allowfullscreen></iframe>
+    <!-- part 2-->
+    <form  class="box" id="add-expense">
+        <h2> Add Expense</h2>
+        <label for="expense-name">Expense Name:</label><br>
+        <input type="text" id="expense-name" name="expense-name" required><br><br>
+        <label for="expense-amount">Amount:</label><br>
+        <input type="number" id="expense-amount" name="expense-amount" required><br><br>
+        <label for="expense-category">Category:</label><br>
+        <select id="expense-category" name="expense-category" required>
+            <option value="">Select a category</option>
+            <option value="Food">Food</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Rent">Rent</option>
+        </select><br><br>
+        <label for="expense-date">Date:</label><br>
+        <input type="date" id="expense-date" name="expense-date" required><
+        <button type="submit" id="add-expense-btn">Add Expense</button>
+    </form>
+
+    <!-- part 3-->
+    <div class="box" id="your-expenses">
+        <h2>Your Expenses</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Groceries</td>
+                    <td>$50</td>
+                    <td>Food</td>
+                    <td>2023-05-01</td>
+                </tr>
+                <tr>
+                    <td>Gas</td>
+                    <td>$30</td>
+                    <td>Transportation</td>
+                    <td>2023-05-02</td>
+                </tr>
+                <tr>
+                    <td>Movie Tickets</td>
+                    <td>$20</td>
+                    <td>Entertainment</td>
+                    <td>2023-05-03</td>
+                </tr>
+                <tr>
+                    <td>Clothes</td>
+                    <td>$100</td>
+                    <td>Shopping</td>
+                    <td>2023-05-04</td>
+                </tr>
+                <tr>
+                    <td>Electricity Bill</td>
+                    <td>$75</td>
+                    <td>Utilities</td>
+                    <td>2023-05-05</td>
+                </tr>
+            </tbody>
+        </table>
+     </div>
+</body>
+</html>
